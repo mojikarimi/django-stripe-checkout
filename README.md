@@ -16,6 +16,9 @@ In this project, the steps of connecting to the stripe are written step by step 
 
 - Project implementation
 
+## Image
+
+![Image Stripe](https://github.com/mojikarimi/django-stripe-checkout/blob/master/Media/repo-git-stripe.png)
 
 ## Installing the virtual environment
 
