@@ -21,7 +21,6 @@ def index(request):
                 'quantity': 1,
             }],
             mode="payment",
-            customer_creation='always',
             success_url=request.build_absolute_uri(reverse("success")),
             cancel_url=request.build_absolute_uri(reverse("cancel")),
         )
