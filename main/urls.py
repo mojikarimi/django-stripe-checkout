@@ -22,6 +22,5 @@ urlpatterns = [
     re_path('^$', index, name='index'),
     re_path('^success$', success, name='success'),
     re_path('^cancel$', cancel, name='cancel'),
-    re_path('^my_webhook_view$', my_webhook_view, name='my_webhook_view'),
 
 ]

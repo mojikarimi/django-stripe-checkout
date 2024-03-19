@@ -1,10 +1,10 @@
-from django.shortcuts import render, redirect  # new
-from django.conf import settings  # new
-from django.urls import reverse  # new
-import stripe  # new
+from django.shortcuts import render, redirect
+from django.conf import settings
+from django.urls import reverse
+import stripe
 
 
-def index(request):  # new
+def index(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
     price = 50
     price_dolor = price * 100
@@ -14,7 +14,7 @@ def index(request):  # new
                 'price_data': {
                     'currency': 'usd',
                     'product_data': {
-                        'name': 'T-shirt',
+                        'name': 'My Product Name',
                     },
                     'unit_amount': price_dolor,
                 },
