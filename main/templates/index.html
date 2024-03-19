@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Homepage</h1>
+<form action="{% url 'index' %}" method="post">
+  {% csrf_token %}
+  <button type="submit">Purchase!</button>
+</form>
+{% endblock %}
